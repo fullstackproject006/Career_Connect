@@ -1,0 +1,15 @@
+.final-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  color: white;
+}
+
+.final-cta div {
+  text-align: center;
+}
+
+.final-cta h3 {
+  margin-bottom: 16px;
+}

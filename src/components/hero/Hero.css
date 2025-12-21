@@ -1,0 +1,47 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+}
+
+.hero-left {
+  padding: 60px;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.hero-right {
+  padding: 60px;
+  background: linear-gradient(135deg, #ffedd5, #fed7aa);
+}
+
+.hero-left h1,
+.hero-right h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero-search {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-search input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  flex: 1;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2563eb;
+}
+
+.hint {
+  display: block;
+  margin-top: 10px;
+  color: #475569;
+  font-size: 14px;
+}

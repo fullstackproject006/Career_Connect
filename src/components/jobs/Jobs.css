@@ -1,0 +1,34 @@
+.featured-jobs {
+  padding: 60px 80px;
+}
+
+.featured-jobs h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.apply-btn {
+  margin-top: 12px;
+}
+
+.job-card h3 {
+  margin-bottom: 6px;
+}
+
+.job-card span {
+  color: #64748b;
+  font-size: 14px;
+}
