@@ -1,8 +1,11 @@
 import './Header.css';
+import { useAppNavigation } from '../../helpers/navigationHelper';
+import { Button } from 'react-bootstrap';
 
 export default function Header() {
+  const {goLogin,goSignup} = useAppNavigation()
   return (
-    <header className="header">
+    <header className="header">  
       <div className="logo">Career connect</div>
 
       <nav className="nav">
@@ -12,9 +15,9 @@ export default function Header() {
       </nav>
 
       <div className="actions">
-        <button className="btn ghost">Login</button>
-        <button className="btn outline">Sign Up</button>
-        <button className="btn primary">Post a Job</button>
+        <Button className="app-btn ghost" onClick={goLogin}>Login</Button>
+        <Button className="app-btn outline" onClick={goSignup}>Sign Up</Button>
+        <Button className="app-btn primary">Post a Job</Button>
       </div>
     </header>
   );

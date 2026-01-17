@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: Inter, system-ui, sans-serif;
-  background-color: #f8fafc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  background-color: #f8fafc !important;
   color: #0f172a;
 }
 
@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 
-.btn {
+.app-btn {
   padding: 10px 16px;
   border-radius: 6px;
   border: none;
@@ -23,23 +23,23 @@ a {
   font-weight: 500;
 }
 
-.btn.primary {
+.app-btn.primary {
   background: #2563eb;
   color: white;
 }
 
-.btn.secondary {
+.app-btn.secondary {
   background: #22c55e;
   color: white;
 }
 
-.btn.outline {
+.app-btn.outline {
   border: 1px solid #2563eb;
   background: transparent;
   color: #2563eb;
 }
 
-.btn.ghost {
+.app-btn.ghost {
   background: transparent;
   color: #334155;
 }
