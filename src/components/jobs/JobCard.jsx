@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 export default function JobCard({ job }) {
   return (
     <div className="job-card">
@@ -5,7 +7,7 @@ export default function JobCard({ job }) {
       <p>{job.company}</p>
       <span>{job.location}</span>
       <div className="apply-btn">
-        <button className="btn outline">Apply Now</button>
+        <Button className="app-btn outline">Apply Now</Button>
       </div>
     </div>
   );

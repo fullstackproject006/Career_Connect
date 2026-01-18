@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import UserLogin from "./UserLogin/UserLogin";
 import RecruiterLogin from "./RecruiterLogin/RecruiterLogin";
-import "./Login.css";
 import { useAppNavigation } from "../../helpers/navigationHelper";
+import "./Login.css";
 
-const Login = () => {
+const Login = ({closeLoginModal}) => {
   const [isProfile, setIsProfile] = useState({
     user: true,
     recruiter: false,
@@ -42,7 +42,7 @@ const Login = () => {
         {isProfile.user && <UserLogin />}
         {isProfile.recruiter && <RecruiterLogin />}
         <div className="go-back">
-          <div onClick={()=>goHome()}>← Go Back</div>
+          <div onClick={()=>closeLoginModal()}>← Go Back</div>
         </div>
       </div>
     </div>

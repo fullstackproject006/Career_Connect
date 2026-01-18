@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 export default function JobSeekerHero() {
   return (
     <div className="hero-left">
@@ -7,7 +9,7 @@ export default function JobSeekerHero() {
       <div className="hero-search">
         <input placeholder="Job title or keyword" />
         <input placeholder="Location" />
-        <button className="btn primary">Search Jobs</button>
+        <Button className="btn primary">Search Jobs</Button>
       </div>
 
       <a href="#" className="link">Upload Resume</a>
